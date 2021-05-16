@@ -16,18 +16,28 @@ struct User: Identifiable, Comparable {
     let lastName: String
 }
 struct ContentView: View {
-    let users = [
-        User(firstName: "Arnold", lastName: "Rimmer"),
-        User(firstName: "Kristine", lastName: "Kochanski"),
-        User(firstName: "David", lastName: "Lister"),
-    ].sorted()
+
 
     var body: some View {
-        List(users) { user in
-            Text("\(user.lastName), \(user.firstName)")
-        }
+
+        Text("Hello World")
+            .onTapGesture {
+            
+                FileManager.writeToDocumentsDirectory(message: "Test Message")
+            }
     }
+    
+    func getDocumentsDirectory() -> URL {
+        // find all possible documents directories for this user
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+
+        // just send back the first one, which ought to be the only one
+        return paths[0]
+    }
+    
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
