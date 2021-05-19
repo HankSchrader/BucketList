@@ -13,6 +13,8 @@
 		533BF7512651BB3500AF31FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BF73C2651BB3400AF31FB /* ContentView.swift */; };
 		533BF7522651BB3500AF31FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533BF73D2651BB3500AF31FB /* Assets.xcassets */; };
 		533BF7532651BB3500AF31FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533BF73D2651BB3500AF31FB /* Assets.xcassets */; };
+		533BF7632652906300AF31FB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BF7622652906300AF31FB /* MapView.swift */; };
+		533BF7642652906300AF31FB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BF7622652906300AF31FB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		533BF74A2651BB3500AF31FB /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533BF74C2651BB3500AF31FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533BF74D2651BB3500AF31FB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		533BF7622652906300AF31FB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				533BF73B2651BB3400AF31FB /* BucketListApp.swift */,
 				533BF73C2651BB3400AF31FB /* ContentView.swift */,
 				533BF73D2651BB3500AF31FB /* Assets.xcassets */,
+				533BF7622652906300AF31FB /* MapView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				533BF7502651BB3500AF31FB /* ContentView.swift in Sources */,
+				533BF7632652906300AF31FB /* MapView.swift in Sources */,
 				533BF74E2651BB3500AF31FB /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				533BF7512651BB3500AF31FB /* ContentView.swift in Sources */,
+				533BF7642652906300AF31FB /* MapView.swift in Sources */,
 				533BF74F2651BB3500AF31FB /* BucketListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
