@@ -30,5 +30,14 @@ extension MKPointAnnotation: ObservableObject {
         }
         
     }
+    
+    public var wrappedCoordinate: CLLocationCoordinate2D {
+        get {
+            self.coordinate 
+        }
+        set {
+            
+        }
+    }
 }
 

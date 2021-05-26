@@ -22,6 +22,7 @@ struct EditView: View {
         return NavigationView {
             Form {
                 Section {
+                
                     TextField("Place name", text: $placemark.wrappedTitle)
                     TextField("Description", text: $placemark.wrappedSubtitle)
                 }
@@ -30,6 +31,7 @@ struct EditView: View {
                     if loadingState == .loaded {
                         List(pages, id: \.pageid) { page in
                             Text(page.title)
+                            
                                 .font(.headline)
                             + Text(": ") +
                                 Text(page.description)

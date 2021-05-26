@@ -23,27 +23,7 @@ struct ContentView: View {
                 .fill(Color.blue)
                 .opacity(0.3)
                 .frame(width:32, height:32)
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: {
-                        let newLocation = CodableMKPointAnnotation()
-                        newLocation.coordinate = self.centerCoordinate
-                        self.locations.append(newLocation)
-                        self.selectedPlace = newLocation
-                        self.showingEditScreen = true
-                    }) {
-                        Image(systemName: "plus")
-                    }
-                    .padding()
-                    .background(Color.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                    .padding(.trailing)
-                }
-            }
+
         }.onAppear(perform: loadData)
         .alert(isPresented: $showingPlaceDetails) {
             Alert(title: Text(selectedPlace?.title ?? "Unknown"), message: Text(selectedPlace?.subtitle ?? "Missing place information."), primaryButton: .default(Text("OK")), secondaryButton: .default(Text("Edit")) {
